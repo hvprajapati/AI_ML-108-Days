@@ -14,6 +14,11 @@ from reports.report_generator import (
     show_summary
 )
 
+from utils.validators import (
+    validate_amount,
+    validate_category
+)
+
 expenses = load_expenses()
 
 while True:
@@ -30,18 +35,30 @@ while True:
 
     if choice == "1":
 
-        amount = float(input("Amount: "))
-        category = input("Category: ")
-        description = input("Description: ")
+        try:
+            amount = float(input("Amount: "))
+            category = input("Category: ")
+            description = input("Description: ")
 
-        add_expense(
-            expenses,
-            amount,
-            category,
-            description
-        )
+            if not validate_amount(amount):
+                print("Error: Amount must be positive")
+                continue
 
-        save_expenses(expenses)
+            if not validate_category(category):
+                print("Error: Category cannot be empty")
+                continue
+
+            add_expense(
+                expenses,
+                amount,
+                category,
+                description
+            )
+
+            save_expenses(expenses)
+
+        except ValueError:
+            print("Error: Invalid amount entered")
 
     elif choice == "2":
 

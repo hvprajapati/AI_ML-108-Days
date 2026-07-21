@@ -1,9 +1,16 @@
 import json
+import os
 
 FILE_NAME = "data/expenses.json"
 
 
 def save_expenses(expenses):
+
+    # Create data directory if it doesn't exist
+    os.makedirs(
+        os.path.dirname(FILE_NAME),
+        exist_ok=True
+    )
 
     with open(
         FILE_NAME,
@@ -16,7 +23,7 @@ def save_expenses(expenses):
             indent=4
         )
 
-
+    
 def load_expenses():
 
     try:

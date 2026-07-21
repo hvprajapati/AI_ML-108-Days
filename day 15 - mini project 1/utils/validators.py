@@ -5,4 +5,4 @@ def validate_amount(amount):
 
 def validate_category(category):
 
-    return len(category.strip()) > 0
+    return len(category.strip()) > 0     

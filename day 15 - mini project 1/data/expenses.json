@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "amount": 100.0,
+        "category": "food",
+        "description": "eaten today ",
+        "date": "2026-07-10"
+    },
+    {
+        "id": 2,
+        "amount": 200.0,
+        "category": "EMI",
+        "description": "Bajaj finance EMI",
+        "date": "2026-07-10"
+    }
+]
