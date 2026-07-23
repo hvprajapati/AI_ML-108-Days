@@ -1,0 +1,15 @@
+{
+    "name": "City Library",
+    "books": [
+        {
+            "id": 1,
+            "title": "Python Basics",
+            "author": "Guido"
+        },
+        {
+            "id": 2,
+            "title": "Data Science 101",
+            "author": "Jane"
+        }
+    ]
+}
