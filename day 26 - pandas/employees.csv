@@ -1,0 +1,6 @@
+EmployeeID,Name,Department,Age,Salary,Experience,Rating
+1001,Alice,IT,25,60000,2,4.5
+1002,Bob,HR,30,50000,5,3.8
+1003,Charlie,Finance,28,75000,4,4.7
+1004,David,Sales,35,80000,8,4.2
+1005,Emma,Marketing,27,65000,3,4.9
