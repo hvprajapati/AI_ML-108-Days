@@ -26,3 +26,7 @@ Thumbs.db
 
 # Environment files
 .env
+
+# Excluded course materials
+New Data Science (1).pdf
+New AIml Course.pdf
